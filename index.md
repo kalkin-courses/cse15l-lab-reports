@@ -1,1 +1,1 @@
-Hello world[!](https://kalkulator413.github.io/cse15l-lab-reports/hidden.html)
+Hello world[!](hidden.html)
