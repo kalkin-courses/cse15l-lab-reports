@@ -1,1 +1,1 @@
-Hello world[!](hidden.html)
+Hello world[**!**](hidden.html)
