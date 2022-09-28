@@ -1,15 +1,3 @@
-<div class="row">
-<div class="medium-4 medium-push-8 columns" markdown="1">
-<div class="panel radius fixed-toc"  data-options="sticky_on:large" markdown="1">
-**Table of Contents**
-{: #toc }
-*  TOC
-{:toc}
-</div>
-</div><!-- /.medium-4.columns -->
-
-<div class="medium-8 medium-pull-4 columns" markdown="1">
-
 ### [Lab Report 1](lab-report-1-week-0.html)
 
 <!-- # Hello world[**!**](hidden.html)
