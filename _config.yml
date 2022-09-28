@@ -28,6 +28,8 @@ twitter_username: barackobama
 github_username: kalkulator413
 
 # Build settings
+remote_theme: jekyll/minima
+
 minima:
   skin: dark
 plugins:
@@ -36,8 +38,6 @@ plugins:
 header_pages:
    - about.md
    - index.md
-
-theme: minima
 
 # Exclude from processing.
 # The following items will not be processed, by default.
