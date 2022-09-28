@@ -1,1 +1,1 @@
-![img](skinny_fists.jpg)
+![img](images/skinny_fists.jpg)
