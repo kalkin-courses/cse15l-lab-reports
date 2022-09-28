@@ -24,13 +24,19 @@ description: >- # this means to ignore newlines until "baseurl:"
   This is my portfolio for CSE 15L at UCSD. Joe is the best!
 baseurl: "/cse15l-lab-reports" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: radiohead
+twitter_username: barackobama
 github_username: kalkulator413
 
 # Build settings
 theme: minima
+minima:
+  skin: dark
 plugins:
   - jekyll-feed
+
+header_pages:
+   - about.md
+   - index.md
 
 # Exclude from processing.
 # The following items will not be processed, by default.
