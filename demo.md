@@ -1,3 +1,7 @@
+---
+title: Playing Around With Markdown
+---
+
 # Hello world[**!**](hidden.html)
 This is sample text.
 
