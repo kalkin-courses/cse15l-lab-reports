@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Kalkin's CSE 15L Portfolio
+title: Kalkin's CSE 15W Portfolio
 email: fkalkin@ucsd.edu
 description: >- # this means to ignore newlines until "baseurl:"
   This is my portfolio for CSE 15L at UCSD. Joe is the best!
@@ -28,7 +28,6 @@ twitter_username: barackobama
 github_username: kalkulator413
 
 # Build settings
-theme: minima
 minima:
   skin: dark
 plugins:
