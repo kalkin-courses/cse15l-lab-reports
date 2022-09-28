@@ -1,1 +1,8 @@
-remote_theme: sharadcodes/jekyll-theme-serial-programmer
+theme: minima
+title: Kalkin's CSE 15L Portfolio
+url: ""
+baseurl: "/cse15l-lab-reports"
+
+author:
+  name: Kalkin
+  email: fkalkin@ucsd.edu
