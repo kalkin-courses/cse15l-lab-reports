@@ -30,7 +30,7 @@ github_username: kalkulator413
 # Build settings
 theme: minima
 minima:
-  skin: solarized-dark
+  skin: dark
 plugins:
   - jekyll-feed
 
