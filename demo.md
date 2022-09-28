@@ -1,5 +1,6 @@
 ---
 title: Playing Around With Markdown
+layout: post
 ---
 
 # Hello world[**!**](hidden.html)
