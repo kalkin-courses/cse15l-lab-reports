@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-  {%- include head.html -%}
-
-  <style> 
-    body {
-        background-image: url("fsharp.jpg");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: 100% 100%;
-    }
+    <style>
+        body{
+            background-color: black;
+        }
     </style>
+  <!-- {%- include head.html -%} -->
 
   <body>
 
     {%- include header.html -%}
+
+
+    <style> 
+        body {
+            background-image: url("fsharp.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+    </style>
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         {{ content }}
       </div>
     </main>
+
+    <style>
+        body{
+            background-color: grey;
+        }
+    </style>
 
     {%- include footer.html -%}
 
