@@ -18,10 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Kalkin's CSE 15L Portfolio
+title: Kalkin's CSE 15L Portfolio 💻
 email: fkalkin@ucsd.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  This is my portfolio for CSE 15L at UCSD.
+  This is my portfolio for CSE 15L at UCSD 🔱.
 baseurl: "/cse15l-lab-reports" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: barackobama
