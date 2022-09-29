@@ -1,38 +1,25 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-    <style>
-        body{
-            background-color: black;
+    <style> 
+        #gradient {
+          height: 800x;
+          background-color: #cccccc;
+          background-image: linear-gradient(black, grey);
         }
-    </style>
-  <!-- {%- include head.html -%} -->
+        </style>
+  {%- include head.html -%}
 
   <body>
 
     {%- include header.html -%}
 
 
-    <style> 
-        body {
-            background-image: url("fsharp.jpg");
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: 100% 100%;
-        }
-    </style>
-
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         {{ content }}
       </div>
     </main>
-
-    <style>
-        body{
-            background-color: grey;
-        }
-    </style>
 
     {%- include footer.html -%}
 
