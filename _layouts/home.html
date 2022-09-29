@@ -3,24 +3,21 @@ layout: default
 ---
 
 <div class="home">
-      <body>
-    <div class="container">
-      <div class="image-wrapper">
-        <img
-          src="/images/fsharp.jpg"
-          alt="Cover image"
-          class="image"
-        />
-      </div>
-    </div>
-  </body>
-  
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
-
-  {{ content }}
-
+    <body>
+        <div class="container">
+            <div class="image-wrapper">
+                <img
+                src="/images/sigurros.jpg"
+                alt="Cover image"
+                class="image"
+                />
+                {%- if page.title -%}
+                    <h1 class="page-heading">{{ page.title }}</h1>
+                {%- endif -%}
+            </div>
+            {{ content }}
+        </div>
+    </body>
 
   {% if site.paginate %}
     {% assign posts = paginator.posts %}
