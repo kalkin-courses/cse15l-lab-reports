@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="home">
-    <body>
+    <!-- <body>
         <div class="container">
             <div class="image-wrapper">
                 <img
@@ -17,7 +17,22 @@ layout: default
             </div>
             {{ content }}
         </div>
-    </body>
+    </body> -->
+
+
+    <body>
+        <div class="container">
+          <div class="image-wrapper">
+            <img
+              src="images/fsharp.jpg"
+              alt="Cover image"
+              class="image"
+            />
+            <h1 class="title">{{ page.title}}</h1>
+          </div>
+          <div class="content">{{ content }}</div>
+        </div>
+      </body>
 
   {% if site.paginate %}
     {% assign posts = paginator.posts %}
