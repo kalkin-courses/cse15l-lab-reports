@@ -111,3 +111,7 @@ The goal in this section was to figure out the most efficient process for editin
 ```
 $ scp WhereAmI.java cs15lfa22aq@ieng6.ucsd.edu:~/; ssh cs15lfa22aq@ieng6.ucsd.edu "javac WhereAmI.java; java WhereAmI"
 ```
+
+It might seem like a long command but it comes down to 2 keystrokes if you click the "up" arrow key and press "enter".
+
+![](https://cdn.discordapp.com/attachments/788233544701968398/1025497415039590470/unknown.png)
