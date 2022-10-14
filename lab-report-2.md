@@ -73,8 +73,21 @@ class SearchEngine {
 The `handleRequest` method simply takes in the class path, query, and fragment and then interacts wiht the backing Set of all words.
 
 This is the main page of the web server.
-[](images/lab-report-2/home.png)
+![](images/lab-report-2/home.png)
 
 To add a word to the underlying HashSet, I can add `/add?s={word}` to the path.
+
+![](images/lab-report-2/hi.png)
+![](images/lab-report-2/hello.png)
+![](images/lab-report-2/twice.png)
+
+You can't add repeats! The method that is called is `handleRequest` with parameter `url = /add?s=hi` or `/add?s=hello`. The HashSet in the class is modified since "hi" and "hello" are added to it. Previously, the HashSet was empty.
+
+Here are some queries, which can be done by adding `/search?s={word}` to the path.
+
+![](images/lab-report-2/search_hi.png)
+![](images/lab-report-2/h.png)
+
+The method that is called is `handleRequest` with parameter `url = /search?s=hi` or `/search?s=h`. Nothing else in the class is modified, the values from the HashSet are simply retreived. The program compiles a list of all the words in the HashSet that contain "hi" in the first example and "h" in the second example. This isn't case sensitive!
 
 ## Part Two: Debugging
