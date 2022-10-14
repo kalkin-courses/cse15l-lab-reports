@@ -91,3 +91,37 @@ Here are some queries, which can be done by adding `/search?s={word}` to the pat
 The method that is called is `handleRequest` with parameter `url = /search?s=hi` or `/search?s=h`. Nothing else in the class is modified, the values from the HashSet are simply retreived. The program compiles a list of all the words in the HashSet that contain "hi" in the first example and "h" in the second example. This isn't case sensitive!
 
 ## Part Two: Debugging
+
+For this part we used JUnit, which is a powerful tool for writing tests. It is a bit tedious to use from the terminal - I very much prefer to run JUnit tests from Intellij.
+
+However, it is still important to know how to run JUnit tests from a terminal since we won't always have a powerful IDE (for example, on a remote server).
+
+### First Bug
+
+The first bug was located in the following code:
+![](images/lab-report-2/bug1.png)
+
+This test showcases the failure-inducing input - a list containing `{"a", "abcd", "adfsdf", "ab"}` and a StringChecker object that checks if each string has `length >= 2`.
+
+![](images/lab-report-2/test.png)
+![](images/lab-report-2/stringchecker.png)
+
+The symptom is that the resulting list is `{"adfsdf", "abcd"}`.
+The bug is that `result.add()` had an unecessary 0 passed in.
+
+The bug caused the symptom because the first argument of `add()` specifies the index to add the element to; the elements were always added to the beginning of the list, making it reverse order.
+
+### Second Bug
+
+The second (and third) bug is in the following code:
+![](images/lab-report-2/bug2.png)
+
+This test case showcases the failure-inducing input - an array with the elements `{4, 3, 2, 1}`.
+![](images/lab-report-2/subtest.png)
+
+The symptom is that the resulting list is `{0, 0, 0, 0}`.
+The bug is that the wrong array is modified and returned.
+
+What is actually happening is that the values in the original array are being set to the values of a blank array. Java integer arrays are initialized with all zeroes, so essentially all the elements in the original array are being set to 0. Then, this array is being returned.
+
+What we should be doing is modying the new array and returning that instead.
