@@ -3,7 +3,7 @@ layout: post
 title: Web Servers and Debugging
 ---
 
-# Part One: Web Servers
+## Part One: Web Servers
 For this part, I hosted a web server on ieng6 by running the following commands:
 ```
 ssh cs15lfa22aq@ieng6.ucsd.edu
@@ -12,7 +12,7 @@ java SearchEngine [port]
 ```
 If I'm on ieng6-201, I can go to http://ieng6-201.ucsd.edu:9530/ to access my web server.
 
-Note: It doesn't work if you aren't connected to UCSD-Protected or RESNET - Protected. There's a UCSD VPN that we can use to access the server on ieng6.
+Note: It doesn't work if you aren't connected to UCSD-Protected or RESNET - Protected. There's a UCSD VPN that we otherwise.
 
  Below is the code for my simple search engine (also available in [this](https://github.com/kalkulator413/wavelet) github repo):
 ```
@@ -70,6 +70,11 @@ class SearchEngine {
     }
 }
 ```
-The `handleRequest` method simply takes in the class path, query, and fragment and then interacts wiht the backing Set of all words. 
+The `handleRequest` method simply takes in the class path, query, and fragment and then interacts wiht the backing Set of all words.
 
-# Part Two: Debugging
+This is the main page of the web server.
+[](images/lab-report-2/home.png)
+
+To add a word to the underlying HashSet, I can add `/add?s={word}` to the path.
+
+## Part Two: Debugging
