@@ -3,4 +3,5 @@ layout: home
 title: Kalkin's CSE 15L Portfolio
 ---
 - ### [Playing Around With Markdown](demo.md)
-- ### [Lab Report 1 - Remote Access](lab-report-1-week-0.html)
+- ### [Lab Report 1 - Remote Access](lab-report-1.md)
+- ### [Lab Report 2 - Web Servers and Debugging](lab-report-2.md)
