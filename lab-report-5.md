@@ -84,8 +84,10 @@ Let's trace the code with the first student example, which is missing a file.
 
 ...
 
-The following sequence of commands is executed because the file was missing.
+The following sequence of commands is executed because the file was missing and the `else` block is executed.
 
-48. The command `echo "ListExamples.java not found. Are you sure it's in the right directory?"` has an exit code of 0 and no stderr. The stdout is "ListExamples.java not found. Are you sure it's in the right directory?".
-49. The command `echo Your grade is 0%` has an exit code of 0 and no stderr. The stdout is "Your grade is 0%".
-50. The command `exit 1` has no stderr or stdout. The exit code is 1.
+48: The command `echo "ListExamples.java not found. Are you sure it's in the right directory?"` has an exit code of 0 and no stderr. The stdout is "ListExamples.java not found. Are you sure it's in the right directory?".
+
+49: The command `echo Your grade is 0%` has an exit code of 0 and no stderr. The stdout is "Your grade is 0%".
+
+50: The command `exit 1` has no stderr or stdout. The exit code is 1.
