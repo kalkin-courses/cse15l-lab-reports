@@ -95,7 +95,9 @@ I ran the command `ssh-keygen` and pressed enter when prompted for a file locati
 
 ![](images/lab-report-1/keygen.png)
 
-I went back to the server and made a directory called `.ssh`. Then I logged out and copied the id_rsa file into the `.ssh` directory in the remote server. Now I can log into the remote server using the password I set earlier instead of having the remember the other password that I set even earlier. How convenient! Maybe I shouldn't have set a password when making the ssh key.
+I went back to the server and made a directory called `.ssh`. Then I logged out and copied the id_rsa.pub file into the `.ssh` directory in the remote server. Now I can log into the remote server using the password I set earlier instead of having the remember the other password that I set even earlier. How convenient! Maybe I shouldn't have set a password when making the ssh key.
+
+**NOTE: MAKE SURE TO COPY `id_rsa.pub` AND NOT `id_rsa`**
 
 ![](images/lab-report-1/usingkey.png)
 
